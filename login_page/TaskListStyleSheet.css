@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    color: white;
+    font-family: "courier new";
+    background: linear-gradient(to right,#6b1e9e 0%,#1f5ba0 100%);
+
+
+    /*Might use this instead because this adds a division between the two blocks*/
+   /* background: linear-gradient(to right,#05386B 0%,#05386B 25%,#379683 25%,#379683 100%); */
+   font-size: 120%; }
+.main_container{
+    display: flex;
+}
+
+/*Part 1: Stuff for list container that contains all lists*/
+.lists_container{
+    margin-top: 2.0%;
+    width: 25vw;
+
+}
+
+.lists_header{
+    text-align: center;
+    font-size: 210%;
+}
+
+.lists{
+    margin-left: 7.5%;
+    font-size: 120%;
+}
+
+/*This is to change pointer and opacity of list name when we hover over it*/
+.all_lists_names:hover{
+    cursor: pointer;
+    opacity: .65;
+}
+
+/*This is for the list that we are currently in*/
+.current_list {
+    font-weight: bold;
+    border-radius: 5px;
+    background: #1f5ba0;
+  }
+
+#add_list_form{
+    display: flex;
+    margin-left: 15.5%;
+    font-size: 120%;
+}
+
+/*This is for both forms*/
+.new{
+    background: transparent;   
+    padding-top: 2.5%;
+    border: 0;
+    border-bottom: 2px solid currentColor;
+    font-size: inherit;
+    outline: none;
+    color: white;
+    letter-spacing: inherit;
+    font-family: inherit;
+}
+    .new:focus{
+        opacity: .65;
+    }
+
+/* This is to change the colors of the form placeholder letters to whichever color the border bottom is */
+::placeholder { 
+    color: inherit;
+  }
+
+/*Part 2: Stuff for main area that contains the current list and all of its tasks*/
+.task_list{
+    margin-top: 7.5%;
+    margin-left: 22%;
+    width: 31vw;
+}
+
+.todo_header{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: inline-block;
+    padding-left: 10%;
+    width: 31vw;
+    background: #6b1e9e;
+}
+
+.task_body{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #8d3cc4;
+    padding-left: 10%;
+    padding-top: 5%;
+    width: 31vw;
+    font-size: 120%;
+}
+
+#add_task_form{
+    display: flex;
+    padding-bottom: 5%;
+
+}
+
+/*To change the buttons for both the list and task list*/
+.btn{
+    background: transparent; 
+    font-family: inherit;
+    padding-top: 5%;  
+    border: 0;
+    font-size: inherit;
+    outline: none;
+    color: inherit;
+    letter-spacing: inherit;
+    cursor: pointer;
+    font-size: 120%;
+}
+    .btn:hover{
+        opacity: .65;
+    }
+
+.btn.symbol{
+font-size: 140%;
+font-weight: 600;
+}
+
+/*Part 3: Buttons to clear tasks and delete current list*/
+.delete_stuff{
+    margin-left: 7%;
+    width: 31vw;
+    padding-left: 10%;
+}
+
+#delete_list_button{
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+/*Part 4: This is to change the stuff relating to the date*/
+#current_date{
+    position: absolute;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 0.5%;
+    width: 18vw;
+    height: 7vh;
+    right: 0;
+    top: 0;
+    font-size: 110%;
+}
+
+/*Part 5: Checkbox and tasks*/ 
+
+/*This is to change the normal checkbox for the tasks. This will hide them and remove them*/
+[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
+/*This is to create our own checkbox*/
+.my_checkbox{
+    margin-right: 8px;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border: 1.75px solid currentColor;
+    border-radius: 2px;
+}
+
+/*This is to change the label for the checkbox, which is the task itself*/
+/*.task label{
+    display: flex;
+    align-items: center;
+    position: relative; 
+    margin-bottom: 5px;
+}*/
+
+.task:hover .my_checkbox{
+    opacity: 0.50;
+    cursor: pointer;
+}
+
+/*This is for when the original checkbox is checked. It will change the new checkbox*/
+[type="checkbox"]:checked + label .my_checkbox{
+    background: #1f5ba0;
+}
+[type="checkbox"]:checked + label{
+   opacity: 0.50;
+}

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <title>Task List</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap"/>
+    <link rel="stylesheet" href="TaskListStylesheet.css"/>
+    <script defer src="TaskList.js"></script>
+  </head>
+
+  <body>
+    
+  <div class="main_container">
+    <div class="lists_container">
+      <h1 class="lists_header">Task Lists</h2>
+      <ul class="lists" id="all_lists"></ul>
+
+      <form action="" id="add_list_form">
+        <input  type="text" class="new list" id="add_list_input" placeholder="Add new list"/>
+        <button class="btn symbol">+</button>
+      </form>
+      <button class="btn" id="delete_list_button">Delete current list</button>
+    </div>
+
+    <div class="task_list" id="selected_list_container">
+      <div class="todo_header">
+        <h1 class="list_title" id="selected_list_title">Default list</h2>
+      </div>
+
+      <div class="task_body">
+        <div class="tasks" id="selected_list_tasks"></div>
+
+        <div class="new_task_creator">
+            <form action="" id="add_task_form">
+                <input  type="text" id="add_task_input" class="new task" placeholder="Add new task"
+                />
+                <button class="btn symbol">+</button>
+              </form>
+        </div>
+
+      </div>
+      <div class="delete_stuff">
+        <button class="btn" id="delete_task_button">Clear completed tasks</button>
+      </div>
+    </div>
+    <div id="current_date"></div>
+  </div>
+  
+  </body>
+</html>
