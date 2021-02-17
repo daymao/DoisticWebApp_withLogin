@@ -5,4 +5,5 @@ that they are finsihed. You can clear finished tasks and remove lists that you n
 local storage of your web browser as JSON. The frontend was made with vanilla javascript and the backend for the login system was 
 made using Express, and Node.js  (with the passport system). The users account information are stored in the local storage of their
 web browser so a multiple accounts can be created and accessed from a single computer. I styled the webpage to look nice and smooth 
-to use and I use this app for my daily planning.
+to use and I use this app for my daily planning. 
+*Note: This webpage is the same that I have in the TaskList repository but this one has a server and login system.
