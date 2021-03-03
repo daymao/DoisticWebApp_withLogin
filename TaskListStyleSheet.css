@@ -16,7 +16,6 @@ body{
 .lists_container{
     margin-top: 2.0%;
     width: 25vw;
-
 }
 
 .lists_header{
@@ -185,4 +184,33 @@ font-weight: 600;
 }
 [type="checkbox"]:checked + label{
    opacity: 0.50;
+}
+
+.button{
+margin:auto;
+background: transparent;
+padding-top: 35vh;
+padding-left: 90vw;
+}
+
+.button .inside{
+    height: 100%;
+    width: 300%;
+    left: -100%; 
+}
+
+.button button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 110%;
+    font-weight: 900;   
+}
+
+.button button:hover{
+    opacity: 0.50;
+    cursor: pointer;
 }
