@@ -1,17 +1,39 @@
-<h1>Register Page</h1>
-<form action="/registerPage" method="POST">
-<div>
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required></div></label>
-
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required></div></label>
-
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" required></div></label>
-
-    <button type="submit">Register</button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
     
+    <title>Register Page</title>
+    <link rel="stylesheet" href="/views/register.css"/>
+  </head>
+
+
+<div class="container"> 
+    <form action="/registerPage" method="POST">
+        <h1>Register Page</h1>
+        <div class="txt_class">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required></label>
+        </div>
+
+        <div class="txt_class">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required></label>
+        </div>
+
+        <div class="txt_class">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required></label>
+        </div>
+
+        <div class="button">
+            <div class="inside"></div>
+            <button type="submit">Register</button>
+        </div>
+
+        <div class="login">
+            <a href="/loginPage">Login Page </a>
+        </div>
+    
+    </form>
 </div>
-</form>
-<a href="/loginPage">Login Page</a>

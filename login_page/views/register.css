@@ -1,0 +1,93 @@
+body{
+    padding: 0;
+    background: linear-gradient(to right,#6b1e9e 0%,#1f5ba0 100%);
+    font-family: "courier new";
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 27.5vw;
+    border-radius: 10px;
+    background-color: lightsteelblue;
+}
+
+.container h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid gray;
+}
+
+.container form{
+    padding: 0 40px;
+}
+
+.container form .txt_class{
+    height: 45px;
+    width: 100%;
+    margin:40px 0;
+}
+
+form .txt_class input{
+    height: 75%;
+    width: 100%;
+    border: 1px solid lightslategray;
+    outline: none;
+}
+
+form .txt_class input:active{
+    border: 1px solid lightslategray;
+}
+
+form .txt_class label{
+    
+    font-size: 18px;
+}
+
+form .button{
+    position: relative;
+    overflow: hidden;
+    width: 102.5%;
+    height: 6vh;
+}
+
+form .button .inside{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%; 
+    z-index: -1;
+    background: blueviolet;
+}
+
+form .button button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+form .button button:hover{
+    color: rgb(20, 20, 20);
+    font-size: 22px;
+}
+
+.login{
+    text-align:center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.login a{
+    text-decoration: none;
+}
+
+.login a:hover{
+    color: gray;
+    border-bottom: 1px solid gray;
+}

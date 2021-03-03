@@ -1,18 +1,36 @@
-<h1>Login Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/views/login.css"/>
+  </head>
+
 <% if (messages.error) { %>
     <%= messages.error %> 
     <% } %>
-<form action="/loginPage" method="POST">
-<div>
+<div class="container">
+    <form class="login-container" action="/loginPage" method="POST">
+        <h1 class="loginh1">Login Page</h1>
+        <div class="txt_class">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required></label>
+            
+        </div>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required></div></label>
+        <div class="txt_class">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required></label>
+        </div>
+       
+        <div class="button">
+            <div class="inside"></div>
+            <button type="submit">Login</button>
+        </div>
 
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" required></div></label>
-
-    <button type="submit">Register</button>
-    
+        <div class="register">
+            <a href="/registerPage">Register Page </a>
+        </div>
+        
+    </form>
 </div>
-</form>
-<a href="/registerPage">Register Page </a>
